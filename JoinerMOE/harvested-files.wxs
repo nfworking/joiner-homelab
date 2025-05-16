@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ProductComponents">
+            <Component Id="cmp5A7DAAD407F2DB799D248180FF3C4CA4" Directory="INSTALLFOLDER" Guid="6d410a02-6018-4f7b-9bd9-b593abdb9bd2">
+                <File Id="fil94D175D8CD87911937A0599A4BDBD57F" KeyPath="yes" Source="$(var.SourceDir)\Join.ps1" />
+            </Component>
+            <Component Id="cmp4BE838314A48527339D8674605A5E0AE" Directory="INSTALLFOLDER" Guid="9f0880fd-e8ca-4a60-b5ec-6c30e7361753">
+                <File Id="fil7929ACF16AE9FD3DF213241471C21A0D" KeyPath="yes" Source="$(var.SourceDir)\JoinerMOE.exe" />
+            </Component>
+            <Component Id="cmp579E1A4FBEB52F01FEA06C87774443E8" Directory="INSTALLFOLDER" Guid="21a60d66-5350-4ddd-a776-0794d16fde37">
+                <File Id="fil95BFD5F19A3F2160BC993DBDF08E382C" KeyPath="yes" Source="$(var.SourceDir)\JoinerMOE.pdb" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?define SourceDir = "C:\Users\tidal\projects\JoinerRelease\out" ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="MOEJoinder" Language="1033" Version="1.0.0.0" Manufacturer="DET" UpgradeCode="c0043cbf-fd02-4f8a-96b4-c67443c18737">
+    <Package InstallerVersion="500" Compressed="yes" InstallScope="perMachine" />
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="MOEJoinder" />
+      </Directory>
+    </Directory>
+
+    <Feature Id="ProductFeature" Title="MOEJoinder" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
+</Wix>
