@@ -1,0 +1,11 @@
+Initial commit of the JoinerMOE project.
+
+This marks the very first version of the codebase.
+It includes the basic project structure and initial setup.
+
+Key components in this commit:
+- Core project files (.csproj, etc.)
+- Basic Join functionality (placeholder)
+- Initial build configuration
+
+This is an alpha release, not intended for production use.
